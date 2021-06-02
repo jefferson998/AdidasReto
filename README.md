@@ -16,3 +16,6 @@
 <summary markdown="span">POM</summary>
 <summary markdown="span">POM con Cucumber</summary>
 </details>
+
+
+![Logo](CaptureReport.PNG) 
