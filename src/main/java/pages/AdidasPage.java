@@ -13,8 +13,6 @@ public class AdidasPage {
         return homeLink;
     }
 
-    
-
     private static By homeLink = By.xpath("//a[contains(@data-auto-id,'logo')]");
     private static By lblProductValidation = By.xpath("//div[@class='product-description___2cJO2']/child::h1//span");
 
