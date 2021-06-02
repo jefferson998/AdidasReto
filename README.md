@@ -1,6 +1,7 @@
 
 
-![Logo](imagen_sqa.svg)
+![Logo](imagen_sqa.svg) 
+#Semillero
 
 # AdidasReto 🚀
 
