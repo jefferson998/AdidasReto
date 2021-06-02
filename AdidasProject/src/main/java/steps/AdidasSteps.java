@@ -134,11 +134,7 @@ public class AdidasSteps {
             }
 
 
-                /*
-                clickProducto(element);
-                validarBusquedaEnCardProduct(AdidasPage.getLblProductValidation(),"TENIS 4D FUSIO");
-                System.out.println(obtenerTextoDelProducto(AdidasPage.getLblProductValidation()));
-                */
+
 
         }
 

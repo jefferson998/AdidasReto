@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Buscador de productos" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-02T13:51:34" hostname="DESKTOP-3CM9Q4J" time="84.424">
+<testsuite name="Buscador de productos" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-02T15:09:00" hostname="DESKTOP-3CM9Q4J" time="83.061">
   <properties/>
-  <testcase name="Buscar producto en la pagina de Adidas y url &lt;url&gt;" classname="Buscador de productos" time="84.424"/>
+  <testcase name="Buscar producto en la pagina de Adidas exitoso" classname="Buscador de productos" time="83.061"/>
   <system-out><![CDATA[
-Scenario Outline: Buscar producto en la pagina de Adidas y url <url> ?[90m# src/test/resources/features/BuscadorAdidas.feature:14?[0m
-  ?[32mGiven ?[0m?[32mMe encuentro en la pagina de Adidas?[0m                          ?[90m# stepDefinitions.AdidasStepDefinitions.meEncuentroEnLaPaginaDeAdidas()?[0m
-  ?[32mWhen ?[0m?[32mBuscar un producto?[0m                                            ?[90m# stepDefinitions.AdidasStepDefinitions.buscarUnProducto()?[0m
-  ?[32mThen ?[0m?[32mVer el producto?[0m                                               ?[90m# stepDefinitions.AdidasStepDefinitions.verElProducto()?[0m
+Scenario Outline: Buscar producto en la pagina de Adidas exitoso       ?[90m# src/test/resources/features/BuscadorAdidas.feature:14?[0m
+  ?[32mGiven ?[0m?[32mMe encuentro en la pagina de Adidas url https://www.adidas.co/?[0m ?[90m# stepDefinitions.AdidasStepDefinitions.meEncuentroEnLaPaginaDeAdidas()?[0m
+  ?[32mWhen ?[0m?[32mBuscar un producto, ver y validar?[0m                               ?[90m# stepDefinitions.AdidasStepDefinitions.buscarUnProducto()?[0m
+  ?[32mThen ?[0m?[32mcerrar browser?[0m                                                  ?[90m# stepDefinitions.AdidasStepDefinitions.verElProducto()?[0m
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 19757
+  <system-err><![CDATA[Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 17644
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2021 8:51:38 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 02, 2021 10:09:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

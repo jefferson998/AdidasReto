@@ -4,13 +4,13 @@ Feature: Buscador de productos
   Quiero elegir un producto
   y validar nombre
 
-  Scenario Outline: Buscar producto en la pagina de Adidas y url <url>
-    Given Me encuentro en la pagina de Adidas
-    When Buscar un producto
-    Then Ver el producto
+  Scenario Outline:  <Escenario>
+    Given Me encuentro en la pagina de Adidas url <url>
+    When Buscar un producto, ver y validar
+    Then cerrar browser
 
     Examples:
-      | Escenario                                    | Url |
-      | Buscar palabra en el buscador de OLX exitoso | https://www.adidas.co/    |
+      | Escenario                                      | url                    |
+      | Buscar producto en la pagina de Adidas exitoso | https://www.adidas.co/ |
 
 

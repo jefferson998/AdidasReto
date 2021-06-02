@@ -11,13 +11,14 @@ public class AdidasStepDefinitions {
     @Steps
     AdidasSteps adidasSteps = new AdidasSteps();
 
-    @Given("^Me encuentro en la pagina de Adidas$")
+    @Given("Me encuentro en la pagina de Adidas url https:\\/\\/www.adidas.co\\/")
     public void meEncuentroEnLaPaginaDeAdidas() {
         SeleniumWebDriver.ChromeWebDriver("https://www.adidas.co/");
 
+
     }
 
-    @When("^Buscar un producto$")
+    @When("^Buscar un producto, ver y validar$")
     public void buscarUnProducto() {
         adidasSteps.buscarProductoEnAdidasPage();
 
@@ -26,7 +27,7 @@ public class AdidasStepDefinitions {
 
     }
 
-    @Then("^Ver el producto$")
+    @Then("^cerrar browser$")
     public void verElProducto() {
         SeleniumWebDriver.driver.close();
 
