@@ -3,6 +3,7 @@
 ![Logo](imagen_sqa.svg) 
 
 
+
 # AdidasReto 🚀
 
 
@@ -21,13 +22,13 @@
 ![Logo](CaptureReport.PNG) 
 
 
-#POM con Cucumber
+## POM con Cucumber
 estructura
 ![Logo](capture_POM.PNG) 
 
 
 ## Excel 
-Products | referencias
+**Products** | **referencias**
 ------------- |:-------------
 TENIS 4D FUSIO  | https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto:sensitive,fl_lossy/07bfe4df4cff44c1b474ac72011ff1bd_9366/tenis-4d-fusio.jpg
 TAPABOCAS ADIDAS (PACK DE 3) | https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto:sensitive,fl_lossy/f24a086fa5954f0fa8abac5300b1b92e_faec/tapabocas-adidas-pack-de-3.jpg
