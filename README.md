@@ -1,7 +1,7 @@
 
 
 ![Logo](imagen_sqa.svg) 
-#Semillero
+
 
 # AdidasReto 🚀
 
@@ -10,38 +10,9 @@
 
    **https://www.adidas.co/**
 
-
-<div class="toc">
-
 <details>
-<ul>
-<summary>
-<li><a href="#header-1"> TEMAS </a></li>
-
-</summary>
-
-<ul>
-<li><a href="#header-2">POM con Cucumber</a></li>
-</ul>
-</ul>
-
+<summary markdown="span">TEMAS</summary>
+<summary markdown="span">Selenium</summary>
+<summary markdown="span">POM</summary>
+<summary markdown="span">POM con Cucumber</summary>
 </details>
-</div>
-
-
-### TEMAS
-
-
-
-
-
-## POM con Cucumber
-
-- Temas
-- Otra cosa
-
-
-[_TOC_]
-#header
-## heraf
-
