@@ -1,4 +1,4 @@
-stepDefinitions/AdidasStepDefinitions.java
- stepDefinitions.AdidasStepDefinitions
 runners/BuscadorAdidasRunner.java
  runners.BuscadorAdidasRunner
+stepDefinitions/AdidasStepDefinitions.java
+ stepDefinitions.AdidasStepDefinitions

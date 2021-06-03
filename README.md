@@ -21,9 +21,12 @@
 
 ![Logo](CaptureReport.PNG) 
 
+## console
+![captureConsole](CaptureConsole.PNG)
+
 
 ## POM con Cucumber
-estructura
+## estructura
 ![Logo](capture_POM.PNG) 
 
 
