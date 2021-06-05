@@ -29,7 +29,7 @@ public class AdidasStepDefinitions {
 
     @Then("^cerrar browser$")
     public void verElProducto() {
-        SeleniumWebDriver.driver.close();
+//        SeleniumWebDriver.driver.close();
 
 
     }

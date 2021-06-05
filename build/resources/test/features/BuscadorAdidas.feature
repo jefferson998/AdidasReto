@@ -10,7 +10,7 @@ Feature: Buscador de productos
     Then cerrar browser
 
     Examples:
-      | Escenario                                      | url                    |
+      | Escenario                                 | url                    |
       | Buscar producto en la pagina de Adidas exitoso | https://www.adidas.co/ |
 
 

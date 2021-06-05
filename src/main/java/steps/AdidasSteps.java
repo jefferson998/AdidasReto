@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
 
@@ -80,24 +81,28 @@ public class AdidasSteps {
     }
 
     public static void cambiarmeDeVentana() {
-        String defaultWindows = SeleniumWebDriver.driver.getWindowHandle();
-        java.util.Set<String> lista = SeleniumWebDriver.driver.getWindowHandles();
-        Iterator<String> Il = lista.iterator();
-        while(Il.hasNext()) {
-            String child_windows = Il.next();
+        defaultWindows = SeleniumWebDriver.driver.getWindowHandle();
+        boolean validacionPantalla = false;
+        while (validacionPantalla == false) {
+            Set<String> lista = SeleniumWebDriver.driver.getWindowHandles();
+            if(lista.size() > 1) {
+                Iterator<String> I1 = lista.iterator();
+                while (I1.hasNext()) {
+                    String child_window = I1.next();
 
-            if (!defaultWindows.equals(child_windows)) {
-                SeleniumWebDriver.driver.switchTo().window(child_windows);
+                    if (!defaultWindows.equals(child_window)) {
+                        SeleniumWebDriver.driver.switchTo().window(child_window);
+                    }
+                }
+                validacionPantalla = true;
             }
-
         }
+
     }
 
-
-    public static void volverAlaVentana(){
+    public static void volverALaVentanaPrincipal() {
         SeleniumWebDriver.driver.switchTo().window(defaultWindows);
     }
-
     public void buscarProductoEnAdidasPage() {
 
 
@@ -106,37 +111,66 @@ public class AdidasSteps {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        for (int i = 0; i < lecturaExcel.size(); i++) {
-            escribirEnBuscador(AdidasPage.getInputSearch(), lecturaExcel.get(i).get("Products"));
 
-
-            Robot robot = null;
-            try {
-
-                robot = new Robot();
+//        for (int i = 0; i < 2; i++) {
+            escribirEnBuscador(AdidasPage.getInputSearch(),lecturaExcel.get(0).get("Products"));
+            try{
+                Robot robot = new Robot();
                 robot.keyPress(KeyEvent.VK_ENTER);
                 robot.keyRelease(KeyEvent.VK_ENTER);
-                Thread.sleep(5000);
-                AdidasPage.setLinkProduct(lecturaExcel.get(i).get("referencias"));
+
+                AdidasPage.setLinkProduct(lecturaExcel.get(0).get("referencias"));
                 clickProducto(AdidasPage.getLinkProduct());
-                Thread.sleep(3000);
-               if (i==0){
-                   cambiarmeDeVentana();
-                   clickProducto(AdidasPage.getBtnHandleUp());
+                Thread.sleep(4000);
 
-               }
-                validarBusquedaEnCardProduct(AdidasPage.getLblProductValidation(),lecturaExcel.get(i).get("Products"));
-                Thread.sleep(2000);
-                clickProducto(AdidasPage.getHomeLink());
+                cambiarmeDeVentana();
+                Thread.sleep(4000);
+                clickProducto(AdidasPage.getBtnHandleUp());
+//                volverALaVentanaPrincipal();
+//
+//                validarBusquedaEnCardProduct(AdidasPage.getLblProductValidation(),lecturaExcel.get(i).get("Products"));
 
-            } catch (AWTException | InterruptedException e) {
+
+
+
+            }catch (Exception e){
                 e.printStackTrace();
             }
 
 
+//        }
 
-
-        }
+//        for (int i = 0; i < lecturaExcel.size(); i++) {
+//            escribirEnBuscador(AdidasPage.getInputSearch(), lecturaExcel.get(i).get("Products"));
+//
+//
+//            Robot robot = null;
+//            try {
+//
+//                robot = new Robot();
+//                robot.keyPress(KeyEvent.VK_ENTER);
+//                robot.keyRelease(KeyEvent.VK_ENTER);
+//                Thread.sleep(5000);
+//                AdidasPage.setLinkProduct(lecturaExcel.get(i).get("referencias"));
+//                clickProducto(AdidasPage.getLinkProduct());
+//                Thread.sleep(3000);
+//               if (i==0){
+//                   cambiarmeDeVentana();
+//                   clickProducto(AdidasPage.getBtnHandleUp());
+//
+//               }
+//                validarBusquedaEnCardProduct(AdidasPage.getLblProductValidation(),lecturaExcel.get(i).get("Products"));
+//                Thread.sleep(2000);
+//                clickProducto(AdidasPage.getHomeLink());
+//
+//            } catch (AWTException | InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//
+//
+//
+//
+//        }
 
 
     }
