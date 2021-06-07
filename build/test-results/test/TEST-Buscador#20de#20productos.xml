@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Buscador de productos" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-03T14:48:00" hostname="DESKTOP-3CM9Q4J" time="89.189">
+<testsuite name="Buscador de productos" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-07T20:24:17" hostname="DESKTOP-3CM9Q4J" time="12.608">
   <properties/>
-  <testcase name="Buscar producto en la pagina de Adidas exitoso" classname="Buscador de productos" time="89.189"/>
+  <testcase name="Buscar producto en la pagina de Adidas exitoso" classname="Buscador de productos" time="12.608"/>
   <system-out><![CDATA[
 Scenario Outline: Buscar producto en la pagina de Adidas exitoso       ?[90m# src/test/resources/features/BuscadorAdidas.feature:14?[0m
-  ?[32mGiven ?[0m?[32mMe encuentro en la pagina de Adidas url https://www.adidas.co/?[0m ?[90m# stepDefinitions.AdidasStepDefinitions.meEncuentroEnLaPaginaDeAdidas()?[0m
-  ?[32mWhen ?[0m?[32mBuscar un producto, ver y validar?[0m                               ?[90m# stepDefinitions.AdidasStepDefinitions.buscarUnProducto()?[0m
-  ?[32mThen ?[0m?[32mcerrar browser?[0m                                                  ?[90m# stepDefinitions.AdidasStepDefinitions.verElProducto()?[0m
+  ?[32mGiven ?[0m?[32mMe encuentro en la pagina de Adidas url ?[0m?[32m?[1mhttps://www.adidas.co/?[0m ?[90m# stepDefinitions.AdidasStepDefinitions.meEncuentroEnLaPaginaDeAdidasUrlHttpsWwwAdidasCo(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mBuscar un producto, ver y validar?[0m                               ?[90m# stepDefinitions.AdidasStepDefinitions.buscarUnProductoVerYValidar()?[0m
+  ?[32mThen ?[0m?[32mcerrar browser?[0m                                                  ?[90m# stepDefinitions.AdidasStepDefinitions.cerrarBrowser()?[0m
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 35250
+  <system-err><![CDATA[Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 32660
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 03, 2021 9:48:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 07, 2021 3:24:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

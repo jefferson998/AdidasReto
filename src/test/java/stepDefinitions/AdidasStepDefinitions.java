@@ -11,27 +11,18 @@ public class AdidasStepDefinitions {
     @Steps
     AdidasSteps adidasSteps = new AdidasSteps();
 
-    @Given("Me encuentro en la pagina de Adidas url (.*)")
-    public void meEncuentroEnLaPaginaDeAdidas() {
-        SeleniumWebDriver.ChromeWebDriver("https://www.adidas.co/");
+    @Given("^Me encuentro en la pagina de Adidas url (.*)$")
+    public void meEncuentroEnLaPaginaDeAdidasUrlHttpsWwwAdidasCo(String url) {
+        SeleniumWebDriver.ChromeWebDriver(url);
+    }
+    @When("Buscar un producto, ver y validar")
+    public void buscarUnProductoVerYValidar() {
 
+    }
+    @Then("cerrar browser")
+    public void cerrarBrowser() {
 
     }
 
-    @When("^Buscar un producto, ver y validar$")
-    public void buscarUnProducto() {
-        adidasSteps.buscarProductoEnAdidasPage();
-
-
-
-
-    }
-
-    @Then("^cerrar browser$")
-    public void verElProducto() {
-        SeleniumWebDriver.driver.close();
-
-
-    }
 
 }
